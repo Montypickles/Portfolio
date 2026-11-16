@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="portfolio">
+
+        <!-- =================================
+             LEFT SIDEBAR
+        ================================= -->
+
+        <aside class="sidebar">
+
+            <!-- Info / Contact Buttons -->
+            <div class="sidebar-header">
+
+                <div class="tabs">
+
+                    <button
+                        class="tab active"
+                        id="info-tab"
+                        type="button">
+                        Info −
+                    </button>
+
+                    <button
+                        class="tab"
+                        id="contact-tab"
+                        type="button">
+                        Contact +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Sidebar Widgets -->
+            <div class="widget-container">
+
+                <!-- INFO SECTION -->
+                <div id="info-content">
+
+                    <!-- Profile Widget -->
+                    <div class="widget profile-widget">
+
+                        <div class="profile-picture">
+                            <img
+                                src="profile.jpg"
+                                alt="My profile picture">
+                        </div>
+
+                        <h2>Max Smith</h2>
+
+                        <p class="profile-role">
+                            Game Developer & Creative
+                        </p>
+
+                        <p>
+                            Computer Science student
+                            interested in game development,
+                            programming and creative direction.
+                        </p>
+
+                       
+                        <div class="social-links">
+
+                            <a href="https://www.linkedin.com/in/max-smith-8972762b3/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link">
+                                LinkedIn ↗
+                            </a>
+
+                            <a href="https://github.com/Montypickles"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-link">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Experience Widget -->
+                    <div class="widget experience-widget">
+
+                        <h2>Experience</h2>
+                        <div id="experience-list"></div>
+
+                    </div>
+
+                    <!-- Skills Widget -->
+                    <div class="widget skills-widget">
+
+                        <h2>Skills</h2>
+
+                        <div id="skills-list"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT SECTION -->
+                <div id="contact-content" hidden>
+
+                    
+                    <div class="widget contact-widget">
+
+                        <h2>Contact Me</h2>
+
+                        <a href="mailto:maxsmithuk@hotmail.comsubject=Enquiry"
+                        class="contact-link">
+                            ✉ Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =================================
+             RIGHT PROJECT DASHBOARD
+        ================================= -->
+
+        <main class="projects">
+
+            <div class="project-grid">
+
+                <!--
+                    MODULAR GAME WIDGETS
+
+                    All game cards are generated
+                    automatically by games.js.
+
+                    To add a new game, edit the
+                    games array inside games.js.
+                -->
+
+                <div
+                    id="game-projects"
+                    class="game-projects">
+                </div>
+
+
+                <!-- Dissertation Widget -->
+                
+                <a href="dissertation.html"
+                class="project-card dissertation-card">
+
+                    <span class="project-label">
+                        RESEARCH
+                    </span>
+
+                    <h2>Dissertation</h2>
+                    <p>Cybersecurity & Neural Simulation</p>
+
+                </a>
+
+                <!-- GitHub Widget -->
+                <a href="github.html" class="project-card github-card">
+
+                    <span class="project-label">
+                        DEVELOPMENT
+                    </span>
+
+                    <h2>GitHub</h2>
+
+                    <p>Repositories & Code</p>
+
+                </a>
+
+                <!-- Other Projects Widget -->
+                <div class="project-card wide">
+
+                    <h2>Other Projects</h2>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- =================================
+         JAVASCRIPT
+    ================================= -->
+
+    <!-- Sidebar button functionality -->
+    <script src="script.js"></script>
+
+    <!-- Reusable game widget generator -->
+    <script src="games.js"></script>
+
+
+    <script src="script.js"></script>
+    <script src="games.js"></script>
+
+    <script src="profile-data.js"></script>
+    <script src="profile-widgets.js"></script>
+
+</body>
+
+</html>
